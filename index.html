@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kevin Krill, Computer Science student (3.91 GPA) at Eastern Michigan University specializing in AWS cloud infrastructure, cybersecurity, and software development. NCAA Division I student-athlete." />
+
+  <!-- Open Graph (controls LinkedIn/Slack preview card) -->
+  <meta property="og:title" content="Kevin Krill | CS Student & Cloud Developer" />
+  <meta property="og:description" content="Computer Science student (3.91 GPA) specializing in AWS cloud infrastructure, cybersecurity, and software development." />
+  <meta property="og:type" content="website" />
+
+  <!-- Structured data: tells Google this page is about a person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kevin Krill",
+    "jobTitle": "Computer Science Graduate",
+    "url": "https://kevinkrill.dev",
+    "sameAs": [
+      "https://www.linkedin.com/in/kevin-krill-694b9739a/",
+      "https://github.com/kevkrill"
+    ]
+  }
+  </script>
+
+  <title>Kevin Krill | CS Student & Cloud Developer</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ACCESSIBILITY: First focusable element — lets keyboard users skip to content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo" aria-label="Kevin Krill — back to top">KK</a>
+
+      <button
+        class="nav__toggle"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Open navigation menu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="#about"      class="nav__link">About</a></li>
+        <li><a href="#projects"   class="nav__link">Projects</a></li>
+        <li><a href="#skills"     class="nav__link">Skills</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#contact"    class="nav__link">Contact</a></li>
+        <li>
+          <a href="Resume_KevinKrill.pdf" class="btn btn--primary btn--sm" download="Kevin-Krill-Resume.pdf">
+            Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Hi, I'm</p>
+        <h1 id="hero-heading" class="hero__name">Kevin Krill</h1>
+        <p class="hero__title">CS Student &amp; Cloud Developer</p>
+        <p class="hero__tagline">
+          3.91 GPA | Eastern Michigan University | Graduating Spring 2026.
+          Seeking entry-level roles in cloud infrastructure, IT, or cybersecurity.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="Resume_KevinKrill.pdf" class="btn btn--secondary" download="Kevin-Krill-Resume.pdf">
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__image">
+        <img
+          src="assets/images/headshot.jpg"
+          alt="Kevin Krill smiling in a blue blazer"
+          width="400"
+          height="400"
+          class="avatar"
+          fetchpriority="high"
+        />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="section__title">About Me</h2>
+      <div class="about__content">
+        <p>
+          I'm a Computer Science student at Eastern Michigan University (3.91 GPA) finishing
+          my degree in Spring 2026, with hands-on experience in AWS cloud infrastructure,
+          cybersecurity, and software development. I'm pursuing CompTIA Security+ and AWS
+          Academy Cloud Foundations certifications to back it up.
+        </p>
+        <p>
+          For four years I've competed as an NCAA Division I baseball student-athlete,
+          managing a 50+ hour per week athletic commitment while maintaining a 3.91 GPA.
+          That environment has built real discipline around prioritization, performing under
+          pressure, and working within a team toward a shared goal.
+        </p>
+        <p>
+          Based in White Lake, MI: open to on-site, hybrid, or remote roles.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section__title">Projects</h2>
+      <div class="projects__grid">
+
+        <!-- PROJECT 1: AWS Labs -->
+        <article class="project-card" aria-labelledby="project-aws-title">
+          <div class="project-card__image-wrap project-card__image-wrap--placeholder" aria-hidden="true">
+            <span>AWS</span>
+          </div>
+          <div class="project-card__body">
+            <h3 id="project-aws-title" class="project-card__title">AWS Cloud Infrastructure Labs</h3>
+            <p class="project-card__desc">
+              Deployed and managed cloud infrastructure using AWS Academy, including provisioning EC2 instances,
+              configuring VPCs and security groups, managing IAM roles and S3 bucket policies, and
+              building automated deployment and backup scripts.
+            </p>
+            <ul class="project-card__tags" role="list" aria-label="Technologies used">
+              <li class="tag">EC2</li>
+              <li class="tag">S3</li>
+              <li class="tag">IAM</li>
+              <li class="tag">VPC</li>
+              <li class="tag">DynamoDB</li>
+              <li class="tag">Lambda</li>
+              <li class="tag">Bash</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm" target="_blank" rel="noopener noreferrer"
+                 aria-label="View AWS Labs source code on GitHub">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Cornerstone Lab -->
+        <article class="project-card" aria-labelledby="project-cornerstone-title">
+          <div class="project-card__image-wrap project-card__image-wrap--placeholder" aria-hidden="true">
+            <span>SEC</span>
+          </div>
+          <div class="project-card__body">
+            <h3 id="project-cornerstone-title" class="project-card__title">Cornerstone Security Lab</h3>
+            <p class="project-card__desc">
+              <!-- Fill in what this lab involved — e.g., network defense, vulnerability assessment, packet analysis, incident response -->
+              [Add your description here — what did you do, what tools did you use, what was the outcome?]
+            </p>
+            <ul class="project-card__tags" role="list" aria-label="Technologies used">
+              <li class="tag">Cybersecurity</li>
+              <li class="tag">Networking</li>
+              <li class="tag">Linux</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm" target="_blank" rel="noopener noreferrer"
+                 aria-label="View Cornerstone Lab on GitHub">
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Placeholder — add your next project here -->
+        <article class="project-card project-card--coming-soon" aria-labelledby="project-3-title">
+          <div class="project-card__image-wrap project-card__image-wrap--placeholder" aria-hidden="true">
+            <span>+</span>
+          </div>
+          <div class="project-card__body">
+            <h3 id="project-3-title" class="project-card__title">More Coming Soon</h3>
+            <p class="project-card__desc">
+              Additional projects are on the way. Check back soon or view my GitHub for
+              works in progress.
+            </p>
+            <ul class="project-card__tags" role="list" aria-label="Technologies used">
+              <li class="tag">In Progress</li>
+            </ul>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm" target="_blank" rel="noopener noreferrer"
+                 aria-label="View GitHub profile">
+                GitHub Profile
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section__title">Skills</h2>
+      <div class="skills__groups">
+
+        <div class="skills__group">
+          <h3 class="skills__group-title">Cloud & Infrastructure</h3>
+          <ul class="skills__list" role="list">
+            <li class="skill-item">AWS EC2 &amp; VPC</li>
+            <li class="skill-item">AWS S3 &amp; IAM</li>
+            <li class="skill-item">AWS Lambda &amp; DynamoDB</li>
+            <li class="skill-item">AWS RDS &amp; CloudWatch</li>
+            <li class="skill-item">Linux Administration</li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__group-title">Security</h3>
+          <ul class="skills__list" role="list">
+            <li class="skill-item">Network Security</li>
+            <li class="skill-item">IAM &amp; Access Control</li>
+            <li class="skill-item">CompTIA Security+ <em>(in progress)</em></li>
+            <li class="skill-item">AWS Cloud Foundations <em>(in progress)</em></li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__group-title">Languages</h3>
+          <ul class="skills__list" role="list">
+            <li class="skill-item">Python</li>
+            <li class="skill-item">Java</li>
+            <li class="skill-item">JavaScript</li>
+            <li class="skill-item">SQL</li>
+            <li class="skill-item">HTML &amp; CSS</li>
+            <li class="skill-item">Bash</li>
+          </ul>
+        </div>
+
+        <div class="skills__group">
+          <h3 class="skills__group-title">Tools</h3>
+          <ul class="skills__list" role="list">
+            <li class="skill-item">Git &amp; GitHub</li>
+            <li class="skill-item">VS Code</li>
+            <li class="skill-item">Linux CLI</li>
+            <li class="skill-item">Unity</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="experience section" aria-labelledby="experience-heading">
+      <h2 id="experience-heading" class="section__title">Experience</h2>
+      <div class="timeline">
+
+        <!-- ENTRY 1: NCAA Baseball -->
+        <article class="timeline__entry" aria-labelledby="exp-ncaa-title">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3 id="exp-ncaa-title" class="timeline__role">NCAA Division I Student-Athlete, Baseball</h3>
+              <span class="timeline__company">Eastern Michigan University / Oakland University</span>
+              <span class="timeline__dates">2022 – Present</span>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Managed a 50+ hour/week athletic commitment alongside a full-time Computer Science courseload, maintaining a 3.91 GPA.</li>
+              <li>Demonstrated leadership and strategic decision-making in high-pressure competitive environments across 50+ games per season.</li>
+              <li>Collaborated with a 35-member roster and coaching staff to execute game plans and optimize team performance.</li>
+            </ul>
+            <ul class="project-card__tags" role="list" aria-label="Skills demonstrated">
+              <li class="tag">Leadership</li>
+              <li class="tag">Time Management</li>
+              <li class="tag">Team Collaboration</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ENTRY 2: Kalamazoo Growlers -->
+        <article class="timeline__entry" aria-labelledby="exp-growlers-title">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3 id="exp-growlers-title" class="timeline__role">Collegiate Summer League Player</h3>
+              <span class="timeline__company">Kalamazoo Growlers, Northwoods League</span>
+              <span class="timeline__dates">Summers 2023 &amp; 2024</span>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Competed in a professional-style environment across a 70+ game schedule over 10 weeks.</li>
+              <li>Operated under a demanding daily schedule requiring sustained focus, resilience, and time management.</li>
+            </ul>
+            <ul class="project-card__tags" role="list" aria-label="Skills demonstrated">
+              <li class="tag">Resilience</li>
+              <li class="tag">High Performance</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ENTRY 3: Project Management Assistant -->
+        <article class="timeline__entry" aria-labelledby="exp-pm-title">
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <div class="timeline__header">
+              <h3 id="exp-pm-title" class="timeline__role">Project Management Assistant</h3>
+              <span class="timeline__company">AP Art &amp; Associates</span>
+              <span class="timeline__dates">Summer 2022</span>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Reviewed and organized construction documentation, tracking revisions and ensuring accuracy across project phases.</li>
+              <li>Managed digital storage of blueprints and communicated change proposals with project teams.</li>
+              <li>Supported on-schedule, on-budget project delivery through attention to detail and team coordination.</li>
+            </ul>
+            <ul class="project-card__tags" role="list" aria-label="Skills demonstrated">
+              <li class="tag">Documentation</li>
+              <li class="tag">Project Coordination</li>
+              <li class="tag">Communication</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section__title">Get In Touch</h2>
+      <p class="contact__lead">
+        I'm actively looking for opportunities in IT, cybersecurity, and software development.
+        If you have a role that might be a fit, or just want to connect, my inbox is open.
+      </p>
+      <a href="mailto:kevinjkrill@gmail.com" class="btn btn--primary btn--lg">
+        Say Hello
+      </a>
+      <ul class="contact__socials" role="list">
+        <li>
+          <a href="https://github.com/kevkrill" target="_blank" rel="noopener noreferrer"
+             aria-label="GitHub profile (opens in new tab)">
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kevin-krill-694b9739a/" target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn profile (opens in new tab)">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <p>Designed &amp; Built by Kevin Krill | <span id="footer-year"></span></p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
